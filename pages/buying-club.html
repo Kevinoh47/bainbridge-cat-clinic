@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buying Club</title>
+    <!-- <link rel="stylesheet" href="" /> -->
+    <style type="text/css">
+      body {
+        font-family: arial;
+        background-color: rgb(185,179,175);}
+      h1 {
+        color: rgb(255,255,255);}
+      input {
+				padding: 6px 12px 6px 12px;
+				border: 1px solid black; 
+				color: black;}
+			input.text {
+				color: black}
+    </style>
+  </head>
+  <body>
+    <div id="page">
+      <h1>Buying Club</h1>
+      <o>When you join the Buying Club, you receive an automatic 10% discount on regular prescriptions and merchandise.</o>
+      <h2>New Account</h2>
+      <form id="signup" method="post" action="login.html">
+        <div>
+            <fieldset>
+              <legend>Create your new Buying Club Account</legend>
+              <label for="email">Email: </label>
+              <input type="email" id="email" />
+      
+              <label for="username">Create a username: </label>
+              <input type="text" id="username" />
+      
+              <label for="password">Create a password: </label>
+              <input type="password" id="password" />
+      
+              <input id="signup-submit" type="submit" value="sign up" />
+            </fieldset>
+        </div>
+
+      </form>
+    </div>
+    <script src="js/click.js"></script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buying Club Login</title>
+    <!-- <link rel="stylesheet" href="" /> -->
+    <style type="text/css">
+      body {
+        font-family: arial;
+        background-color: rgb(185,179,175);
+      }
+      h1 {
+        color: rgb(255,255,255);
+      }
+      input {
+				padding: 6px 12px 6px 12px;
+				border: 1px solid black; 
+        color: black;
+      }
+			input.text {
+        color: black
+      }
+      .one-third, .two-thirds {
+        background-color: #f8584a;
+        border: 12px solid #fff;
+        float: left;
+        padding: 10px;
+        margin: 10px;
+        color: #fff;
+        overflow: hidden;
+      }
+      .one-third {width: 268px;}
+      .two-thirds {width: 530px;
+      }
+      .one-third fieldset {border: none; margin: 0.5em;
+      }
+      .two-thirds fieldset {border: none; margin: 2.5em;
+      }
+      legend {
+        color: black;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="page">
+      <h1>Buying Club Login</h1>
+      <o>Buying Club members receive an automatic 10% discount on regular prescriptions and merchandise.</o>
+      <p>If you are not yet a member, please <a href="buying-club.html">join</a>.</p>
+      <div class="one-third column">
+          <img src="../images/BICC-logo-04.png" alt="logo" id="logo" />
+      </div>
+      <form id="login" method="post" action="order.html">
+        <div class="two-thirds column" id="main">
+            <fieldset>
+              <legend>Login</legend>
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" />
+              <label for="pwd">Password:</label>
+              <input type="password" id="pwd" name="pwd" />
+              <input id="login-submit" type="submit" value="Come on in!" />
+            </fieldset>
+          </div><!-- .two-thirds -->
+      </form>
+    </div><!-- .container -->
+    <!-- <script src="../js/utilities.js"></script>
+    <script src="../js/submit-event.js"></script> -->
+  </body>
+</html>
