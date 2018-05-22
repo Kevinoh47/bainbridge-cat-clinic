@@ -15,8 +15,74 @@
   </head>
   <body>
     <h1>Contact Us</h1>
-    <p></p>
-    <h2></h2>
-    <p></p>
+    <p>Please send us an <a href="mailto:kevinoh47@yahoo.com">email!</a></p>
+    <p>Or if you prefer, send us some feedback below:</p>
+    <form id="feedback" action="www.example.com/feedback.php" method="post">
+      <fieldset>
+        <legend>About You:</legend>
+        <label>
+          Your name: <input type="text" name="name" size="30" maxlength="100">
+        </label>
+        <br />
+        <label>
+          Your email: <input type="email" name="email" size="30"  maxlength="100">
+        </label>
+        <br />
+      </fieldset>
+      <br />
+      <fieldset>
+          <legend for="feedback-topic">
+            What is the area of your concern? 
+          </legend>
+          <p>
+              <select name="feedback-topic" id="feedback-topic">
+                  <option value="complaint">Report a problem</option>
+                  <option value="testimonial">Testimonial</option>
+                  <option value="treatment">Question about cat treatment</option>
+                  <option value="other">Something else</option>
+                </select>
+          </p>
+        </fieldset>
+      <br />
+      <fieldset>
+          <legend>
+              May we use your testimonial on our website?
+          </legend>
+          <p>
+            <label>
+                <input type="radio" name="permission-yes" value="yes"/> Emphatically yes!
+            </label>
+              
+            <label>
+                <input type="radio" name="permission-yes" value="no"/> No thank you.
+            </label>
+          </p>
+        </fieldset>
+      <br />
+      <fieldset>
+        <legend for="feedback-text">
+            What is on your mind?
+        </legend>
+        <p>
+            <textarea id="feedback-text" name="feedback-text" cols="60" rows="6">Please enter your comments or feedback.</textarea>
+        </p>
+      </fieldset>
+      <br />
+      <fieldset>
+          <legend>
+              May we add you to our email list for monthly, or more ocassional updates?
+          </legend>
+          <p>
+            <label>
+                <input type="checkbox" name="subscribe-all" checked="unchecked"/> Yes, for all.
+            </label>
+            <label>
+                <input type="checkbox" name="subscribe-ocassional" checked="unchecked"/> Yes, but only ocassional updates.
+            </label>
+          </p>
+        </fieldset>
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
   </body>
 </html>
