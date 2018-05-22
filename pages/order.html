@@ -20,21 +20,27 @@
   <body>
     <div id="page">
       <h1>Buying Club Order Form</h1>
-      <o>Choose your products, and submit an order.</o>
+      <o>Choose your products, and order them here.</o>
       <h2>Product List</h2>
-      <!-- <form id="products" method="get" action="">
+      <form id="order-products" method="post" action="purchase.html">
         <div class="two-thirds column" id="main">
-            <fieldset>
-              <legend>Login</legend>
-              <label for="username">Username:</label>
-              <input type="text" id="username" name="username" />
-              <label for="pwd">Password:</label>
-              <input type="password" id="pwd" name="pwd" />
-              <input type="submit" value="Login" />
+            <legend for="product-list">
+                Products list
+              </legend>
+              <p>
+                  <select name="product-list" id="product-list">
+                      <option value="catnip">Kitty Nips Catnip</option>
+                      <option value="mouse-toy">Mousey Mouse cat toy</option>
+                      <option value="metal-food-bowl">Kitty Din metal food bowl</option>
+                      <option value="metal-water-bowl">Kitty Din metal water bowl</option>
+                      <option value="dry-cat-food-large">Yummy Kitty cat food, 25 lbs.</option>
+                      <option value="dry-cat-food-small">Yummy Kitty cat food, 10 lbs.</option>
+                    </select>
+              </p>
             </fieldset>
           </div><!-- .two-thirds -->
-        <!-- <input id="login-submit" type="submit" value="Come on in!" />
-      </form> --> -->
+        <input id="login-submit" type="submit" value="Add to cart" /> 
+      </form> -->
     </div><!-- .container -->
   </body>
 </html>

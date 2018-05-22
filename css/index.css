@@ -16,7 +16,7 @@ h1, h3, p {
     float: left;
     clear: left;
     width: 320px;
-    background-color: #fff;
+    background-color: bisque;
     color: #5a514c;
     text-align: center;}
 
@@ -26,9 +26,11 @@ h1 {
     background-image: url("../images/BICC-logo-04.png"); 
     background-repeat: no-repeat;
     text-indent: -9999px;
-    border-top: 1px solid #bcbdc0;
+    /* border-top: 1px solid #bcbdc0;
     border-left: 1px solid #bcbdc0;
-    border-right: 1px solid #bcbdc0;}
+    border-right: 1px solid #bcbdc0; */
+    border: 1px solid #bcbdc0;
+}
 
 h3 {
     margin: 0 0 0 50px;
@@ -54,8 +56,16 @@ p {
 }
 
 a:hover, a.on {
-    color: #cc3333;
-    background-color: #ffffff;
+    color: rgb(224, 253, 216);
+    font-weight: bold;
+    background-color: rgb(167, 225, 248);
+    border: 1px solid black;
+}
+
+#header {
+    background-color: bisque;
+    max-width: 600px;
+    border: 1px solid #bcbdc0;
 }
 
 /* Border under box when you move script in the last example */
