@@ -10,72 +10,55 @@ body {
     -o-background-size: cover;
     background-size: cover;
     margin: 0;
-    padding: 0;}
-
-h1, h3, p {
-    float: left;
-    clear: left;
-    width: 320px;
-    background-color: bisque;
-    color: #5a514c;
-    text-align: center;}
-
-h1 {
-    margin: 50px 0 0 50px;
-    height: 175px;
-    background-image: url("../images/BICC-logo-04.png"); 
-    background-repeat: no-repeat;
-    text-indent: -9999px;
-    /* border-top: 1px solid #bcbdc0;
-    border-left: 1px solid #bcbdc0;
-    border-right: 1px solid #bcbdc0; */
-    border: 1px solid #bcbdc0;
+    padding: 0;
 }
 
-h3 {
-    margin: 0 0 0 50px;
-    padding: 25px 0 0 0;
-    font-family: 'Open Sans', arial, sans-serif;
-    font-size: 1.8em;
-    font-style: italic;
-    font-weight: 800;
-    line-height: 0.80em;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    border-left: 1px solid #bcbdc0;
-    border-right: 1px solid #bcbdc0;}
-
-p {
-    margin: 0 0 0 50px;
-    padding: 30px 0 25px 0;
-    font-weight: bold;
+figure {
+    display: table;
+    caption-side: bottom;
+    width: 320px;
+    height: 175px;
+    background-image: url("../images/BICC-logo-04.png");
+    margin-top: 9px;
+    margin-left: 9px;
+    margin-right: 9px;
+    border: 2px solid #bcbdc0;
+    border-right: 3px solid #bcbdc0;
+}
+figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    background-color: bisque;
+    border-top: 2px solid #bcbdc0; 
+    border-left: 2px solid #bcbdc0; 
+    border-bottom: 2px solid #bcbdc0; 
+    margin-left: 9px;
     text-align: center;
-    border-right: 1px solid #bcbdc0;
-    border-bottom: 1px solid #bcbdc0;
-    border-left: 1px solid #bcbdc0;
+}
+
+#head-nav {
+    background-color: bisque;
+    width: 210px;
+    height: 180px;
+    border-top: 2px solid #bcbdc0; 
+    border-right: 2px solid #bcbdc0; 
+    border-bottom: 2px solid #bcbdc0; 
+    margin-top: -200px;
+    margin-left: 333px;
+    margin-right: 9px;
 }
 
 a:hover, a.on {
     color: rgb(224, 253, 216);
-    font-weight: bold;
     background-color: rgb(167, 225, 248);
     border: 1px solid black;
 }
 
-#header {
-    background-color: bisque;
-    max-width: 600px;
-    border: 1px solid #bcbdc0;
-}
-
-/* Border under box when you move script in the last example */
-p + script + h3 {
-    padding-bottom: 20px;
-    border-bottom: 1px solid #bcbdc0;}
-
 /* Fix for full-screen background image: Chrome on Android */
 html{
     height:100%;
-    min-height:100%;}
+    min-height:100%;
+}
 body{
-    min-height:100%;}
+    min-height:100%;
+}
