@@ -38,7 +38,7 @@ figcaption {
 
 #head-nav {
     background-color: bisque;
-    width: 210px;
+    width: 220px;
     height: 180px;
     border-top: 2px solid #bcbdc0; 
     border-right: 2px solid #bcbdc0; 
@@ -46,6 +46,7 @@ figcaption {
     margin-top: -200px;
     margin-left: 333px;
     margin-right: 9px;
+    font-size: 10pt;
 }
 
 a:hover, a.on {

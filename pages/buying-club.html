@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Buying Club</title>
+    <meta charset="utf-8"/>
     <!-- <link rel="stylesheet" href="" /> -->
     <style type="text/css">
       body {
@@ -14,13 +15,23 @@
 				border: 1px solid black; 
 				color: black;}
 			input.text {
-				color: black}
+        color: black}
+
+      #discount {
+        float: left;
+        clear: left;
+        background-color: #ffb87a;
+        color: #1e1b1e;
+        width:170px;
+        padding: 18px 30px;
+        text-align: center;}
+
     </style>
   </head>
   <body>
     <div id="page">
       <h1>Buying Club</h1>
-      <o>When you join the Buying Club, you receive an automatic 10% discount on regular prescriptions and merchandise.</o>
+      <p id="discount">When you join the Buying Club, you receive an automatic 10% discount on regular prescriptions and merchandise.</p>
       <h2>New Account</h2>
       <form id="signup" method="post" action="login.html">
         <div>
@@ -38,10 +49,9 @@
               <input id="signup-submit" type="submit" value="sign up" />
             </fieldset>
         </div>
-
       </form>
     </div>
     <footer>&copy; Bainbridge Island Cat Clinic</footer>
-    <!-- <script src="js/click.js"></script> -->
+    <script src="../js/discount-on-signup.js"></script>
   </body>
 </html>

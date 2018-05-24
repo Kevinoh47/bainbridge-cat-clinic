@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Client Information</title>
+    <meta charset="utf-8"/>
+    <!-- <link rel="stylesheet" href="" /> -->
+    <style type="text/css">
+      body {
+        font-family: arial;
+        background-color: rgb(185,179,175);}
+      h1 {
+        color: rgb(255,255,255);}
+      input {
+				padding: 6px 12px 6px 12px;
+				border: 1px solid black; 
+				color: black;}
+			input.text {
+        color: black}
+      #username-feedback {
+        width: 400px;
+        margin-left: 50px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border: 1px black;
+        background-color: lightcoral;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="page">
+      <h1>Client Information</h1>
+      <p>Please provide some information about yourself and your pet or pets.</p>
+      <form id="client-info" method="post" action="www.example.com/test.php">
+        <div>
+            <fieldset>
+              <legend>Contact information</legend>
+              <label for="username">Name: </label>
+              <input type="text" id="username" required="required" />
+              <p id='username-feedback'></p>
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" required="required" />
+
+              <label for="phone">Phone:</label>
+              <input type="tel" id="tel" required="required" />
+              
+      
+              <label for="pet-info">Pet information </label>
+              <textarea id="pet-info" cols="60" rows="6">Please tell us about your pet(s).</textarea>
+      
+              <input id="client-submit" type="submit" value="Submit" />
+            </fieldset>
+        </div>
+
+      </form>
+    </div>
+    <footer>&copy; Bainbridge Island Cat Clinic</footer>
+    <script src="../js/contact-validation.js"></script> 
+  </body>
+</html>
