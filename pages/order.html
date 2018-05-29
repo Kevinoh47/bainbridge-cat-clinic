@@ -26,72 +26,85 @@
       <h1>Buying Club Order Form</h1>
       <p>Choose your products, and order them here.</p>
       <h2>Products</h2>
-      <form id="product-groups" method="GET" action="www.example.com/select.php">
+      <form id="product-groups" method="GET" action="order.html">
         <p>
           Choose the type or types of products that you are interested in.
         </p>
-        <select name="product-types" size="3" multiple="multiple">
-          <option value="cat-toys" selected="selected">Cat Toys</option>
-          <option value="cat-food">Cat Food</option>
-          <option value="cat-houseware">Cat Houseware</option>
+        <select id="product-types" name="product-types" size="3" multiple="multiple">
+          <option value="cat-toys-collection" >Cat Toys</option>
+          <option value="cat-food-collection">Cat Food</option>
+          <option value="cat-houseware-collection">Cat Houseware</option>
         </select>
-        <input id="show-products" type="submit" value="Display products" />
+        <input id="show-products-submit" type="submit" value="Display products" />
       </form>
       <br />
-      <table id="cat-toys-collection" class="hidden">
-        <thead>
-          <tr>
-              <th>Cat Toys</th><th>Price</th><th>Add to cart</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Mousey Mouse Cat Toy</td><td>$14.95</td><td></td>
-          </tr>
-          <tr>
-            <td>Happy Cat Laser Pointer</td><td>$22.95</td><td></td>
-          </tr>
-          <tr>
-            <td>Robot Mouse</td><td>$65.95</td><td></td>
-          </tr>
-        </tbody>
-      </table>
-      <br />
-      <table id="cat-food-collection" class="hidden">
-        <thead>
-          <tr>
-            <th>Cat Food</th><th>Price</th><th>Add to cart</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Kitty Nips Catnip, 9 oz.</td><td>$11.95</td><td></td>
-          </tr>
-          <tr>
-            <td>Yummy Kitty cat food, 25 lbs.</td><td>$30.95</td><td></td>
-          </tr>
-          <tr>
-            <td>Yummy Kitty cat food, 10 lbs.</td><td>$15.95</td><td></td>
-          </tr>
-        </tbody>
-      </table>
-      <br />
-      <table id="cat-houseware-collection" class="hidden">
-        <thead>
-          <tr>
-            <th>Cat Houseware</th><th>Price</th><th>Add to cart</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Kitty Din metal food bowl</td><td>$14.95</td><td></td>
-          </tr>
-          <tr>
-            <td>Kitty Din metal water bowl</td><td>$17.95</td><td></td>
-          </tr>
-        </tbody>
-      </table>
-      <br />
+      <!-- <div id="test-only" class="hidden">TEST ONLY</div> -->
+      <div id="product-tables">
+        <div id="table1" class="hidden">
+          <table id="cat-toys-collection" >
+              <thead>
+                <tr>
+                    <th>Cat Toys</th><th>Price</th><th>Add to cart</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mousey Mouse Cat Toy</td><td>$14.95</td><td></td>
+                </tr>
+                <tr>
+                  <td>Happy Cat Laser Pointer</td><td>$22.95</td><td></td>
+                </tr>
+                <tr>
+                  <td>Robot Mouse</td><td>$65.95</td><td></td>
+                </tr>
+              </tbody>
+          </table>
+        </div>
+        <br />
+        <div id="table2" class="hidden">
+          <table id="cat-food-collection" >
+            <thead>
+              <tr>
+                <th>Cat Food</th><th>Price</th><th>Add to cart</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Kitty Nips Catnip, 9 oz.</td><td>$11.95</td><td></td>
+              </tr>
+              <tr>
+                <td>Yummy Kitty cat food, 25 lbs.</td><td>$30.95</td><td></td>
+              </tr>
+              <tr>
+                <td>Yummy Kitty cat food, 10 lbs.</td><td>$15.95</td><td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br />
+        <div id="table3" class="hidden">
+          <table id="cat-houseware-collection" >
+            <thead>
+              <tr>
+                <th>Cat Houseware</th><th>Price</th><th>Add to cart</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Kitty Din metal food bowl</td><td>$14.95</td><td></td>
+              </tr>
+              <tr>
+                <td>Kitty Din metal water bowl</td><td>$17.95</td><td></td>
+              </tr>
+              <tr>
+                <td>Kitty Climber Cat Tree</td><td>$129.95</td><td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <br />
       <!-- <form id="order-products" method="post" action="purchase.html">
         <div >
           <legend for="product-list">
@@ -112,5 +125,6 @@
       </form> 
     </div><!-- .container -->
     <footer>&copy; Bainbridge Island Cat Clinic</footer>
+    <script src="../js/display-tables.js"></script>
   </body>
 </html>
