@@ -1,4 +1,4 @@
-// the getSelectValues function is courtesy of https://stackoverflow.com/questions/14972708/how-to-get-all-selected-option-text-form-multi-select-using-javascript
+// Courtesy of https://stackoverflow.com/questions/14972708/how-to-get-all-selected-option-text-form-multi-select-using-javascript
 function GetSelectValues(select) {
   var result = [];
   var options = select && select.options;
@@ -10,11 +10,9 @@ function GetSelectValues(select) {
     if (opt.selected) {
       result.push(opt.value || opt.text);
     }
-    // console.log(result);
   }
   return result;
 }
-
 
 function displayHiddenElements(e) {
   e.preventDefault();

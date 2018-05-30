@@ -38,24 +38,35 @@
         <input id="show-products-submit" type="submit" value="Display products" />
       </form>
       <br />
-      <!-- <div id="test-only" class="hidden">TEST ONLY</div> -->
       <div id="product-tables">
         <div id="table1" class="hidden">
           <table id="cat-toys-collection" >
               <thead>
                 <tr>
-                    <th>Cat Toys</th><th>Price</th><th>Add to cart</th>
+                  <th>Cat Toys</th><th>Price</th><th>Add to cart</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Mousey Mouse Cat Toy</td><td>$14.95</td><td></td>
+                  <td class='prod-name'>Mousey Mouse Cat Toy</td>
+                  <td class='prod-price'>$14.95</td>
+                  <td>
+                    <input id="mousey-mouse-cat-toy" type="submit" value="Add" />
+                  </td>
                 </tr>
                 <tr>
-                  <td>Happy Cat Laser Pointer</td><td>$22.95</td><td></td>
+                  <td class='prod-name'>Happy Cat Laser Pointer</td>
+                  <td class='prod-price'>$22.95</td>
+                  <td>
+                    <input id="happy-cat-laser-pointer" type="submit" value="Add" />
+                  </td>
                 </tr>
                 <tr>
-                  <td>Robot Mouse</td><td>$65.95</td><td></td>
+                  <td class='prod-name'>Robot Mouse</td>
+                  <td class='prod-price'>$65.95</td>
+                  <td>
+                    <input id="robot-mouse-toy" type="submit" value="Add" />
+                  </td>
                 </tr>
               </tbody>
           </table>
@@ -70,13 +81,25 @@
             </thead>
             <tbody>
               <tr>
-                <td>Kitty Nips Catnip, 9 oz.</td><td>$11.95</td><td></td>
+                <td class='prod-name'>Kitty Nips Catnip, 9 oz.</td>
+                <td class='prod-price'>$11.95</td>
+                <td>
+                  <input id="kitty-nips-catnip-9oz" type="submit" value="Add" />
+                </td>
               </tr>
               <tr>
-                <td>Yummy Kitty cat food, 25 lbs.</td><td>$30.95</td><td></td>
+                <td class='prod-name'>Yummy Kitty cat food, 25 lbs.</td>
+                <td class='prod-price'>$30.95</td>
+                <td>
+                  <input id="yummy-kitty-cat-food-25lb" type="submit" value="Add" />
+                </td>
               </tr>
               <tr>
-                <td>Yummy Kitty cat food, 10 lbs.</td><td>$15.95</td><td></td>
+                <td class='prod-name'>Yummy Kitty cat food, 10 lbs.</td>
+                <td class='prod-price'>$15.95</td>
+                <td>
+                  <input id="yummy-kitty-cat-food-10lb" type="submit" value="Add"/>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -91,17 +114,32 @@
             </thead>
             <tbody>
               <tr>
-                <td>Kitty Din metal food bowl</td><td>$14.95</td><td></td>
+                <td class='prod-name'>Kitty Din metal food bowl</td>
+                <td class='prod-price'>$14.95</td>
+                <td>
+                  <input id="kitty-din-metal-food-bowl" type="submit" value="Add" />
+                </td>
               </tr>
               <tr>
-                <td>Kitty Din metal water bowl</td><td>$17.95</td><td></td>
+                <td class='prod-name'>Kitty Din metal water bowl</td>
+                <td class='prod-price'>$17.95</td>
+                <td>
+                  <input id="kitty-din-metal-water-bowl" type="submit" value="Add" />
+                </td>
               </tr>
               <tr>
-                <td>Kitty Climber Cat Tree</td><td>$129.95</td><td></td>
+                <td class='prod-name'>Kitty Climber Cat Tree</td>
+                <td class='prod-price'>$129.95</td>
+                <td>
+                  <input id="kitty-climber-cat-tree" type="submit" value="Add" />
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
+      </div>
+      <div id="shopping-cart" >
+        <!-- <ul>Shopping Cart</ul> -->
       </div>
     </div>
     <br />
@@ -126,5 +164,6 @@
     </div><!-- .container -->
     <footer>&copy; Bainbridge Island Cat Clinic</footer>
     <script src="../js/display-tables.js"></script>
+    <script src="../js/add-to-cart.js"></script>
   </body>
 </html>
