@@ -42,38 +42,37 @@ function formatCart(Cart) {
   var myItems = myCart.items.slice(); //clone array to avoid using same reference.
   var myPrices = myCart.prices.slice();
   var mySubTotals = myCart.getSubtotal();
+  var myProdMap = myCart.prodMap;
 
   // console.log("items - global:", items);
   // console.log("prices - global:", prices);
   // console.log("myItems:", myItems);
   // console.log("myPrices:", myPrices);
+  // console.log("myCart", myCart);
+  // console.log("productMap", productMap);
+  // console.log("myProdMap", myProdMap);
   // console.log("mySubtotals:", mySubTotals);
 
   var myCartList = document.getElementById('shopping-cart-list');
-
-  //build item list
+  // remove current children
+  while (myCartList.firstChild) {
+    //remove child nodes
+    var removeEl = myCartList.firstChild;
+    myCartList.removeChild(removeEl);
+  }
+  //build/rebuild item list
   var i=0, itemsLen = myItems.length, j=0, pricesLen = myPrices.length;
   var newLi, currentItem,currentPrice,newText;
 
-  for (i; i < itemsLen; i++) {
-    if (i in myItems) {
-      // unfortunately, in some cases, this is looping twice where it should only loop once...
-      for (j; j < pricesLen; j++) {
-        if (j in myPrices) {
-          newLi = document.createElement('li');
-          currentItem = myItems.pop();
-          currentPrice = myPrices.pop();
-          newText = document.createTextNode(currentItem + ': ' + currentPrice)
-          newLi.appendChild(newText);
-          myCartList.appendChild(newLi);
-        }
-      }
-    }
-  }
-
-
-  //console.log("productMap", productMap);
-
+  for (var entry of myProdMap.entries()) {
+    console.log("entry", entry); 
+    console.log("key",entry[0]);
+    console.log("value", entry[1]);
+    newLi = document.createElement('li');
+    newText = document.createTextNode(entry[0] + ': ' + entry[1]);
+    newLi.appendChild(newText);
+    myCartList.appendChild(newLi);
+  }  
   
   // build subtotal display
   // var mySubtotalDisplay = document.getElementById('shopping-cart');
@@ -106,7 +105,7 @@ function formatCart(Cart) {
 function displayCart(e) {
   addToLists(e);
 
-  var myCart = new Cart(items, prices);
+  var myCart = new Cart(items, prices, productMap);
   // var mySubtotal = myCart.getSubtotal();
   // var elCart = document.getElementById('shopping-cart');
   // elCart.innerHTML = myCart.items;
