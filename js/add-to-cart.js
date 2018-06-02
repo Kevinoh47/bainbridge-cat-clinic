@@ -44,19 +44,9 @@ function formatCart(Cart) {
   var mySubTotals = myCart.getSubtotal();
   var myProdMap = myCart.prodMap;
 
-  // console.log("items - global:", items);
-  // console.log("prices - global:", prices);
-  // console.log("myItems:", myItems);
-  // console.log("myPrices:", myPrices);
-  // console.log("myCart", myCart);
-  // console.log("productMap", productMap);
-  // console.log("myProdMap", myProdMap);
-  // console.log("mySubtotals:", mySubTotals);
-
   var myCartList = document.getElementById('shopping-cart-list');
   // remove current children
   while (myCartList.firstChild) {
-    //remove child nodes
     var removeEl = myCartList.firstChild;
     myCartList.removeChild(removeEl);
   }
@@ -65,9 +55,6 @@ function formatCart(Cart) {
   var newLi, currentItem,currentPrice,newText;
 
   for (var entry of myProdMap.entries()) {
-    console.log("entry", entry); 
-    console.log("key",entry[0]);
-    console.log("value", entry[1]);
     newLi = document.createElement('li');
     newText = document.createTextNode(entry[0] + ': ' + entry[1]);
     newLi.appendChild(newText);
@@ -75,41 +62,35 @@ function formatCart(Cart) {
   }  
   
   // build subtotal display
-  // var mySubtotalDisplay = document.getElementById('shopping-cart');
-  // var newDiv = document.createElement('div');
-  // var newSubAmountNode = document.createTextNode('$ ' + mySubTotals);
-  // newDiv.appendChild(newSubAmountNode);
-
-  // if (!document.getElementById("cart-subtotal")) {
-  //   // get parent node
-  //   var mySubtotalDisplay = document.getElementById('shopping-cart');
-  //   //build new div
-  //   var newDiv = document.createElement('div');
-  //   var newAttId = document.createAttribute("id");       
-  //   newAttId.value = "cart-subtotal";                           
-  //   newDiv.setAttributeNode(newAttId); 
-  //   //create sub amount
-  //   var newSubAmountNode = document.createTextNode('$ ' + mySubTotals);
-  //   // append sub amount to new div
-  //   newDiv.appendChild(newSubAmountNode);
-  //   //append new div to parent node
-  //   mySubtotalDisplay.appendChild(newDiv);
-  // }
-  // else {
-  //   console.log('yay...')
-  //   var mySubtotalDiv = document.getElementById("cart-subtotal");
-  //   //newDiv.innerHTML=newSubAmountNode; //TODO not sure this works.
-  // }
+  if (!document.getElementById("cart-subtotal")) {
+    // get parent node
+    var mySubtotalDisplay = document.getElementById('shopping-cart');
+    //build new div
+    var newDiv = document.createElement('div');
+    var newAttId = document.createAttribute("id");       
+    newAttId.value = "cart-subtotal";                           
+    newDiv.setAttributeNode(newAttId); 
+    //create sub amount
+    var newSubAmountNode = document.createTextNode('$ ' + mySubTotals);
+    // append sub amount to new div
+    newDiv.appendChild(newSubAmountNode);
+    //append new div to parent node
+    mySubtotalDisplay.appendChild(newDiv);
+  }
+  else {
+    var mySubtotalDiv = document.getElementById("cart-subtotal");
+    while (mySubtotalDiv.firstChild) {
+      var removeEl = mySubtotalDiv.firstChild;
+      mySubtotalDiv.removeChild(removeEl);
+    }
+    var newSubAmountNode = document.createTextNode('$ ' + mySubTotals);
+    mySubtotalDiv.appendChild(newSubAmountNode);
+  }
 }
 
 function displayCart(e) {
   addToLists(e);
-
   var myCart = new Cart(items, prices, productMap);
-  // var mySubtotal = myCart.getSubtotal();
-  // var elCart = document.getElementById('shopping-cart');
-  // elCart.innerHTML = myCart.items;
-
   formatCart(myCart);
 }
 
