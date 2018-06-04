@@ -22,8 +22,6 @@ function Cart (items, prices, prodMap) {
   }
 }
 
-var elCart = document.getElementById('shopping-cart');
-
 function addToLists(e) {
   e.preventDefault();
   var target = e.target;
@@ -42,6 +40,7 @@ function formatCart(Cart) {
   var myItems = myCart.items.slice(); //clone array to avoid using same reference.
   var myPrices = myCart.prices.slice();
   var mySubTotals = myCart.getSubtotal();
+  var newSubAmountNode = document.createTextNode('Subtotal: $ ' + mySubTotals);
   var myProdMap = myCart.prodMap;
 
   var myCartList = document.getElementById('shopping-cart-list');
@@ -70,8 +69,6 @@ function formatCart(Cart) {
     var newAttId = document.createAttribute("id");       
     newAttId.value = "cart-subtotal";                           
     newDiv.setAttributeNode(newAttId); 
-    //create sub amount
-    var newSubAmountNode = document.createTextNode('$ ' + mySubTotals);
     // append sub amount to new div
     newDiv.appendChild(newSubAmountNode);
     //append new div to parent node
@@ -79,11 +76,11 @@ function formatCart(Cart) {
   }
   else {
     var mySubtotalDiv = document.getElementById("cart-subtotal");
+    // remove current children
     while (mySubtotalDiv.firstChild) {
       var removeEl = mySubtotalDiv.firstChild;
       mySubtotalDiv.removeChild(removeEl);
     }
-    var newSubAmountNode = document.createTextNode('$ ' + mySubTotals);
     mySubtotalDiv.appendChild(newSubAmountNode);
   }
 }
@@ -94,6 +91,7 @@ function displayCart(e) {
   formatCart(myCart);
 }
 
+//event listener delegates from the table container.
 var el = document.getElementById('product-tables');
 el.addEventListener('click', function(e) {
   displayCart(e);
