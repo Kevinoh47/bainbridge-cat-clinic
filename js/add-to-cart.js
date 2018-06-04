@@ -18,7 +18,7 @@ function Cart (items, prices, prodMap) {
         subtotal += parseFloat(prices[i].replace(/[^0-9-.]/g, ''));
       }
     }
-    return subtotal;
+    return subtotal.toFixed(2);
   }
 }
 
