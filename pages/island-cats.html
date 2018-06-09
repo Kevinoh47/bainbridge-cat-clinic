@@ -4,16 +4,17 @@
     <title>Island Cats: An Online Magazine</title>
     <meta charset="utf-8"/>
     <meta description="An online lifestyle magazine for cats living on or near Bainbridge Island, and their people.">
-    <link rel="stylesheet" type="text/css" href="css/960_12_col.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/960_12_col.css"/>
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <style type="text/css">
       body {
-        font-family: 'Quicksand', sans-serif;
-        font-size: 90%;
-        text-align: center;
         color: #ffffff;
-        background: #413f3b url("../images/beppo_emmy_space_heater.jpg");
+        background: #413f3b url("../images/beppo_emmy_spaceheater_edited.png");
+        font-family: 'Quicksand', sans-serif;
+        /* font-family: Georgia, "Times New Roman", Times, serif; */
+        font-size: 90%;
         margin: 0px;
+        text-align: center;
       }
       a {
         color: #b5c1ad;
@@ -22,21 +23,24 @@
       a:hover {
         color: #ffffff;
       }
-      .header {
+      header {
         padding:0px 0px 0px 0px;
         height: 100px;
         position: fixed;
-        top: 0px;
+        top: 10px;
         width: 100%;
         z-index: 50;
+        /* background: rgba(0, 0, 0, 0.2); */
       }
-      .nav {
+      nav {
         float: right;
+        font-family: 'Quicksand', sans-serif;
         padding: 45px 0px 0px 0px;
         text-align: right;
-        border: 2pt solid black;
-        background-color: cadetblue;
+        border: none;
+        background: rgba(0, 0, 0, 0.2);
       }
+
       .wrapper {
         width: 960px;
         margin: 0px auto;
@@ -71,41 +75,104 @@
       .more-articles p:last-child {
         border-bottom: none;
       }
-      .footer {
-        clear: both;
+      footer {
+        clear: both; 
         background: rgba(0, 0, 0, 0.2);
         padding: 5px 10px;
+        position: fixed;
+        margin: 0;
+        bottom: 0;
       }
-      .footer p {
+      footer p {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 75%;
         text-align: right;
       }
-      .footer a {
+      footer a {
         color: #807c72;
+      }
+      #copyright {
+        color: #807c72;
+      }
+      img.large {
+        width: 500px;
+      }
+      img.medium {
+        width: 250px;
+      }
+      img.small {
+        width: 100px;
       }
     </style>
   </head>
   <body>
-    <div class="header">
-      <dif class="container_12">
+    <header>
+      <div class="container_12">
         <div class="grid_5">
-          <a href="../index.html">
+          <a href="../index.html"><!--Make the logo a link to the main page.-->
             <img src="../images/logo-txt.png" 
             alt="Bainbridge Island Cat Clinic's lifestyle magazine, Island Cats." width="216" height="37"
             class="logo" />
           </a>
         </div>
-        <div class="nav grid_7">
-          <a href="">home</a> / <a href="">news</a> / <a href="">archives</a> / <a href="">about</a> 
+        <nav class="grid_7">
+          <a href="../index.html">home</a> / <a href="">news</a> / <a href="">archives</a>
+        </nav>
+        <h1>Island Cats: An Online Magazine</h1>
+      </div>
+    </header><!--end header-->
+    <div class="wrapper">
+      <div class="main-story container_12">
+        <div class="grid_6 push_6">
+          <h2><a href="">Island Cat Hangouts</a></h1>
         </div>
-      </dif>
-    </div>
-
-    <h1>Island Cats: An Online Magazine</h1>
-    <footer>
+        <div class="intro grid_3 push_9">
+          <p class="date">June 8 2018</p>
+          <p>Area cats Beppo and Emmy work hard holding down cushions on their front porch. Says Emmy, this is some tough work but someone has to do it."</p>
+          <img class="medium" src="../images/emmy_beppo_porch_edited_v2.png" alt="Area cats work steady."/>
+          <p>Beppo claims Emmy is being sarcastic, but this reporter is not so sure about that.</p>
+        </div>
+      </div><!--end .main-story-->
+      <div class="more-articles container_12">
+        <h2 class="grid_12"><a href="">More Articles</a></h2>
+        <div class="grid_3">
+          <img class="small"src=""/>
+          <p><a href="">Hunting Rats: A Tourists' Guide</a></p>
+          <p><a href="">Cat Grooming Options on the Rock</a></p>
+          <p><a href="">Luxury Cat Condos</a></p>
+          <p><a href="">Complacency and Coyotes</a></p>
+        </div>
+        <div class="grid_3">
+          <img class="small"src=""/>
+          <p><a href="">Indoor Vs. Outdoor Living</a></p>
+          <p><a href="">Health Risks of an All Dry Kibble Diet</a></p>
+          <p><a href="">So You Have Fleas</a></p>
+          <p><a href="">Top 10 Cat Toys of 2017</a></p>
+        </div>
+        <div class="grid_3">
+          <img class="small"src=""/>
+          <p><a href="">Small Rodent Hunting</a></p>
+          <p><a href="">Neighborhood Cat Fights: An Investigative Report</a></p>
+          <p><a href="">Living with Dogs</a></p>
+          <p><a href="">Strategies for Managing Yappy Dogs</a></p>
+        </div>
+        <div class="grid_3">
+          <img class="small"src=""/>
+          <p><a href="">The Risk of Cars</a></p>
+          <p><a href="">Cat Trees, and More</a></p>
+          <p><a href="">Best Places on the Island to be a Cat</a></p>
+          <p><a href="">Watching Fish Tanks</a></p>
+        </div>
+      </div><!--end .more-articles-->
+    </div><!--end .wrapper-->
+    <footer class="clearfix">
+      <div class="container_12">
+        <p class="grid_12">
+          <a href="">Legal Info</a> / <a href="">Privacy Policy</a>
+        </p>
+      </div>
       <div id='copyright'>&copy; Bainbridge Island Cat Clinic</div>
-    </footer>
+    </footer><!--end footer-->
     <script src="../js/utilities.js"> </script>
   </body>
 </html>

@@ -12,7 +12,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 figure {
     display: table;
     caption-side: bottom;
@@ -35,7 +34,6 @@ figcaption {
     margin-left: 9px;
     text-align: center;
 }
-
 nav {
     background-color: bisque;
     width: 220px;
