@@ -1,0 +1,91 @@
+/*Note: I tried everything in 
+https://stackoverflow.com/questions/6529421/hide-scrollable-content-behind-transparent-fixed-position-divs-when-scrolling-th?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa 
+as well as other resouces to prevent the article text from displaying under the header as it scrolls, 
+but was not able to solve this problem.
+*/
+@font-face {
+  font-family: "Quicksand";
+  src: url("https://fonts.googleapis.com/css?family=Quicksand");
+}
+body {
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 90%;
+  margin: 0px;
+  text-align: center;
+  background: #413f3b url("../images/beppo_emmy_spaceheater_edited.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+}
+a {
+  color: #b5c1ad;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffffff;
+}
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10; 
+  background: rgba(0, 0, 0, 0.4);
+}
+nav {
+  float: right;
+  margin-top: -50px;
+  font-family: 'Quicksand', sans-serif;
+  width: 250px;
+  text-align: right;
+  border: none;
+}
+nav li {
+  display: inline;
+  margin-right: 4px;
+}
+.wrapper {
+  position: relative;
+  top: 150px;
+  width: 960px;
+  margin-bottom: 180px;
+  text-align: left;
+  z-index: 5;
+}
+h1, h2 {
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 240%;
+  margin-top: 20px;
+}
+.main-story {
+  height: 350px;
+  line-height: 1.2em;
+  padding-left: 20px;
+}
+.more-articles {
+  padding: 10px;
+  margin-top: 20px;
+}
+.more-articles p {
+  border-bottom: 1px solid #807c72;
+  padding: 5px 0px 15px 0px;
+  font-size: 80%;
+}
+.more-articles p:last-child {
+  border-bottom: none;
+}
+footer {
+  float: right;
+  width: 300px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+  text-align: right;
+}
+footer li {
+  display: inline;
+  margin-right: 4px;
+}
+img.medium {
+  width: 250px;
+}
