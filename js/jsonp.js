@@ -1,12 +1,11 @@
 showFearFreeGrowth({
   ffg: [
     {
-      // type: 'line',
       data: {
         labels: [2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018],
         datasets: [
           {
-            data: [0, 2, 5, 15, 25, 73, 79, 82, 91, 110],
+            data: [0, 2, 5, 15, 25, 73, 79, 92, 151, 222],
             label: 'Fear-Free Vets',
             borderColor: '#3e95cd',
             fill: false,
@@ -19,12 +18,6 @@ showFearFreeGrowth({
           },
         ],
       },
-      // options: {
-      //   title: {
-      //     display: true,
-      //     text: 'Growth of Fear-Free Vet Practices',
-      //   },
-      // },
     },
   ],
 });

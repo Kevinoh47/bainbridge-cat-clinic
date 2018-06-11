@@ -11,11 +11,10 @@ function showFearFreeGrowth(data) { //  callback when JSON loads.
     options: {
       title: {
         display: true,
-        text: 'Growth of Fear-Free Vet Practices',
+        text: 'Growth of Fear-Free and Cat-Only Vet Practices',
       },
     },
   });
-
   document.getElementById('ff-chart').innerHTML = myChart;
 }
 
