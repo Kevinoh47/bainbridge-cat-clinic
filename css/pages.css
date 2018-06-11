@@ -1,0 +1,43 @@
+body {
+  font-family: arial;
+  background-color: rgb(185,179,175);
+}
+h1 {
+  color: rgb(255,255,255);
+}
+nav {
+  /* position: absolute;
+  bottom: 40px; */
+  font-size: 90%;
+}
+nav li {
+  display: inline;
+  margin-right: 4px;
+}
+/* footer {
+  position: absolute;
+  bottom: 0px;
+} */
+.offer {
+  font-size: 120%;
+  font-weight: bold;
+  color: darkred;
+}
+input {
+  padding: 6px 12px 6px 12px;
+  border: 1px solid black; 
+  color: black;
+}
+input.text {
+  color: black
+}
+#discount {
+  float: left;
+  clear: left;
+  background-color: #ffb87a;
+  color: #1e1b1e;
+  width:170px;
+  padding: 20px 20px;
+  margin-right: 10px;
+  text-align: center;
+}
