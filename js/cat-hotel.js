@@ -53,10 +53,10 @@
   const roomsChart = new Chart(chart, {
     type: 'bar',
     data: {
-      labels: ['Winslow Kitty Inn', 'The Cat House', 'Pussy Willows Bed and Breakfast'],
+      labels: ['Winslow Kitty Inn', 'The Cat House', 'Pussy Willows B & B'],
       datasets: [{
         label: 'Available Rooms',
-        data: [21, 16, 12],
+        data: [21, 16, 18],
         backgroundColor: [
           'rgba(255, 99, 132, 0.6)',
           'rgba(54, 162, 235, 0.6)',

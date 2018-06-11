@@ -41,3 +41,6 @@ input.text {
   margin-right: 10px;
   text-align: center;
 }
+#rooms {
+  width:600px;
+}
