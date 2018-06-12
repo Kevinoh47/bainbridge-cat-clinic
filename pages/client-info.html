@@ -31,7 +31,7 @@
     <div id="page">
       <h1>Client Information</h1>
       <p>Please provide some information about yourself and your pet or pets.</p>
-      <form id="client-info" method="post" action="www.example.com/test.php">
+      <form id="client-info" method="post" action="client-info.html">
         <div>
             <fieldset>
               <legend>Contact information</legend>
@@ -43,9 +43,8 @@
               <input type="email" id="email" required="required" />
 
               <label for="phone">Phone:</label>
-              <input type="tel" id="tel" required="required" />
+              <input type="tel" id="phone" required="required" />
               
-      
               <label for="pet-info">Pet information </label>
               <textarea id="pet-info" cols="60" rows="6">Please tell us about your pet(s).</textarea>
       
@@ -71,7 +70,8 @@
     <footer>
       <div id='copyright'>&copy; Bainbridge Island Cat Clinic</div>
     </footer>
-    <script src="../js/contact-validation.js"></script> 
+    <script src="../js/contact-validation.js"></script>
+    <script src="../js/local-storage.js"></script>
     <script src="../js/utilities.js"></script>
   </body>
 </html>
