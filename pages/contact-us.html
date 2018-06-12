@@ -4,44 +4,22 @@
     <meta charset="utf-8"/>
     <meta description="Bainbridge Island Cat Clinic feedback page.">
     <link href="../css/pages.css" type="text/css" rel="stylesheet"/>
-    <style type="text/css">
-      div {
-        border-bottom: 1px solid #efefef;
-        margin: 10px;
-        padding-bottom: 10px;
-        width: 260px;
-      }
-      .about-you {
-        float: left;
-        width: 40px;
-        text-align: right;
-        padding-right: 20px;
-      }
-      #username-feedback {
-        width: 400px;
-        margin-left: 50px;
-        padding-left: 5px;
-        padding-right: 5px;
-        border: 1px black;
-        background-color: lightcoral;
-      }
-    </style>
   </head>
   <body>
     <h1>Contact Us</h1>
     <p>Please send us an <a href="mailto:kevinoh47@yahoo.com">email!</a></p>
     <p>Or if you prefer, send us some feedback below:</p>
-    <form id="feedback" action="www.example.com/feedback.php" method="post">
+    <form id="feedback" action="contact-us.html" method="post">
       <fieldset>
         <legend>About You:</legend>
-        <div>
+        <div class="contact-us-boxes">
             <label for="name" class="about-you">Name:</label>
             <input id="username" type="text" name="name" size="25" maxlength="100"/>
             <p id='username-feedback'></p>
         </div>
-        <div>
+        <div class="contact-us-boxes">
             <label for="email" class="about-you">Email:</label> 
-            <input type="email" name="email" size="25" maxlength="100" required="required"/>
+            <input id="email" type="email" name="email" size="25" maxlength="100" required="required"/>
         </div>
       </fieldset>
       <br />
@@ -65,11 +43,11 @@
           </legend>
           <p>
             <label>
-                <input type="radio" name="permission-yes" value="yes"/> Emphatically yes!
+                <input id="permission-yes" type="radio" name="permission-yes" value="yes"/> Emphatically yes!
             </label>
               
             <label>
-                <input type="radio" name="permission-yes" value="no"/> No thank you.
+                <input id="permission-no" type="radio" name="permission-no" value="no"/> No thank you.
             </label>
           </p>
         </fieldset>
@@ -89,10 +67,10 @@
           </legend>
           <p>
             <label>
-                <input type="checkbox" name="subscribe-all" checked="unchecked"/> Yes, for all.
+                <input id="subscribe-all" type="checkbox" name="subscribe-all" checked="unchecked"/> Yes, for all.
             </label>
             <label>
-                <input type="checkbox" name="subscribe-ocassional" checked="unchecked"/> Yes, but only ocassional updates.
+                <input id="subscribe-ocassional" type="checkbox" name="subscribe-ocassional" checked="unchecked"/> Yes, but only ocassional updates.
             </label>
           </p>
         </fieldset>
@@ -118,5 +96,6 @@
     </footer>
     <script src="../js/contact-validation.js"></script>
     <script src="../js/utilities.js"></script>
+    <script src="../js/local-storage.js"></script> 
   </body>
 </html>
