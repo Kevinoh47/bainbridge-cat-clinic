@@ -6,30 +6,36 @@ h1 {
   color: rgb(255,255,255);
 }
 nav {
-  /* position: absolute;
-  bottom: 40px; */
   font-size: 90%;
 }
 nav li {
   display: inline;
   margin-right: 4px;
 }
-/* footer {
-  position: absolute;
-  bottom: 0px;
-} */
+legend {
+  margin-top: 10px;
+  margin-bottom:10px;
+  font-weight: bold;
+}
 .offer {
   font-size: 120%;
   font-weight: bold;
   color: darkred;
 }
 input {
-  padding: 6px 12px 6px 12px;
+  margin-bottom: 10px;
   border: 1px solid black; 
   color: black;
 }
 input.text {
   color: black
+}
+#boarding-offer, #buying-club {
+  border-style: groove;
+  width: 400px;
+}
+.boarding-offer-p {
+  padding-left: 20px;
 }
 #discount {
   float: left;
@@ -38,13 +44,13 @@ input.text {
   color: #1e1b1e;
   width:170px;
   padding: 20px 20px;
+  margin-top: 50px;
   margin-right: 10px;
   text-align: center;
 }
 #rooms, #fear-free {
-  width:500px;
+  width: 500px;
 }
-
 .about-you {
   float: left;
   width: 40px;
@@ -53,11 +59,37 @@ input.text {
 }
 #username-feedback {
   width: 400px;
-  margin-left: 50px;
-  padding-left: 5px;
-  padding-right: 5px;
   border: 1px black;
   background-color: lightcoral;
+}
+#contact-info-fieldset, #buying-club-signup {
+  display: flex;
+  flex-direction: column;
+}
+
+#signup-submit {
+  float: right;
+  margin-right: 20px;
+}
+#login-fieldset {
+  display: flex;
+  flex-flow: column wrap-reverse;
+  max-height: 100%;
+  width: 300px;
+  align-content: flex-start;
+}
+#login-submit {
+  position: relative;
+  left: 40%;
+  bottom: 66px;
+}
+#logo {
+  width: 200px;
+  position: relative;
+  left: 30px;
+}
+.buying-club-input {
+  width: 200px;
 }
 .contact-us-boxes{
   border-bottom: 1px solid #efefef;
@@ -65,4 +97,85 @@ input.text {
   padding-bottom: 10px;
   width: 260px;
 }
+.one-third, .two-thirds {
+  background-color: #f8584a;
+  border: 12px solid #fff;
+  padding: 10px;
+  margin: 10px;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+.one-third {
+  width: 250px;
+  height: 135px;
+  left: 0px;
+}
+.two-thirds {
+  width: 500px;
+  height: 135px;
+  left: 275px;
+  top: -189px;
+}
+.order-input {
+  padding: 6px 12px 6px 12px;
+  border: 1px solid #b2b2b2; 
+  border-bottom: 2px solid #b2b2b2;
+  color: #444444;
+  text-shadow: 0px 1px 1px #ffffff;
+}
+table {
+  table-layout: fixed;
+  width: 70%;
+  white-space: nowrap;
+  empty-cells: hide;
+}
+th, td {
+  text-align: left;
+  padding: 7px 10px 10px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+th {
+  font-weight: bold;
+}
+tr:hover {
+  background-color: #c3e6e5;
+  border-color: #c3e6e5;
+}
+#product-group-controls {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#product-types {
+  background-color:antiquewhite;
+  padding: 7px;
+  padding-right:20px;
+  width: 115px;
+  height: 70px;
+}
+#shopping-cart {
+  font-weight: bold;
+}
+#shopping-cart-list {
+  font-weight: normal;
+}
+.hidden {
+  display: none;
+}
+.prod-add {
+  width: 30px;
+}
+.prod-name {
+  width: 50%;
+}
+.prod-price {
+  text-align: right;
+  width: 20%;
+}
+
 

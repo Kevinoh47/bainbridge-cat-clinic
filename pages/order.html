@@ -5,66 +5,6 @@
     <meta charset="utf-8"/>
     <meta description="Bainbridge Island Cat Clinic's buying club order form.">
     <link href="../css/pages.css" type="text/css" rel="stylesheet"/>
-    <style type="text/css">
-      input {
-				padding: 6px 12px 6px 12px;
-				border: 1px solid #b2b2b2; 
-        border-bottom: 2px solid #b2b2b2;
-				color: #444444;
-        text-shadow: 0px 1px 1px #ffffff;
-      }
-      table {
-        table-layout: fixed;
-        width: 70%;
-        white-space: nowrap;
-        empty-cells: hide;
-      }
-      th, td {
-        text-align: left;
-        padding: 7px 10px 10px 10px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-      th {
-        font-weight: bold;
-      }
-      tr:hover {
-        background-color: #c3e6e5;
-        border-color: #c3e6e5;
-      }
-      #product-group-controls {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: flex-start;
-      }
-      #product-types {
-        background-color:antiquewhite;
-        padding: 7px;
-        padding-right:20px;
-      }
-      #shopping-cart {
-        font-weight: bold;
-      }
-      #shopping-cart-list {
-        font-weight: normal;
-      }
-      .hidden {
-        display: none;
-      }
-      .prod-add {
-        width: 30px;
-      }
-      .prod-name {
-        width: 50%;
-      }
-      .prod-price {
-        text-align: right;
-        width: 20%;
-      }
-    </style>
   </head>
   <body>
     <div id="page">
@@ -81,7 +21,7 @@
               <option value="cat-food-collection">Cat Food</option>
               <option value="cat-houseware-collection">Cat Houseware</option>
             </select>
-            <input id="show-products-submit" type="submit" value="Display products" />
+            <input class="order-input" id="show-products-submit" type="submit" value="Display products" />
         </div>
       </form>
       <br />
@@ -100,21 +40,21 @@
                   <td class='prod-name'>Mousey Mouse Cat Toy</td>
                   <td class='prod-price'>$14.95</td>
                   <td class='prod-add'>
-                    <input id="mousey-mouse-cat-toy" type="submit" value="Add" />
+                    <input  class="order-input" id="mousey-mouse-cat-toy" type="submit" value="Add" />
                   </td>
                 </tr>
                 <tr>
                   <td class='prod-name'>Happy Cat Laser Pointer</td>
                   <td class='prod-price'>$22.95</td>
                   <td class='prod-add'>
-                    <input id="happy-cat-laser-pointer" type="submit" value="Add" />
+                    <input  class="order-input" id="happy-cat-laser-pointer" type="submit" value="Add" />
                   </td>
                 </tr>
                 <tr>
                   <td class='prod-name'>Robot Mouse</td>
                   <td class='prod-price'>$65.95</td>
                   <td class='prod-add'>
-                    <input id="robot-mouse-toy" type="submit" value="Add" />
+                    <input  class="order-input" id="robot-mouse-toy" type="submit" value="Add" />
                   </td>
                 </tr>
               </tbody>
@@ -135,21 +75,21 @@
                 <td class='prod-name'>Kitty Nips Catnip, 9 oz.</td>
                 <td class='prod-price'>$11.95</td>
                 <td class='prod-add'>
-                  <input id="kitty-nips-catnip-9oz" type="submit" value="Add" />
+                  <input  class="order-input" id="kitty-nips-catnip-9oz" type="submit" value="Add" />
                 </td>
               </tr>
               <tr>
                 <td class='prod-name'>Yummy Kitty cat food, 25 lbs.</td>
                 <td class='prod-price'>$30.95</td>
                 <td class='prod-add'>
-                  <input id="yummy-kitty-cat-food-25lb" type="submit" value="Add" />
+                  <input  class="order-input" id="yummy-kitty-cat-food-25lb" type="submit" value="Add" />
                 </td>
               </tr>
               <tr>
                 <td class='prod-name'>Yummy Kitty cat food, 10 lbs.</td>
                 <td class='prod-price'>$15.95</td>
                 <td class='prod-add'>
-                  <input id="yummy-kitty-cat-food-10lb" type="submit" value="Add"/>
+                  <input  class="order-input" id="yummy-kitty-cat-food-10lb" type="submit" value="Add"/>
                 </td>
               </tr>
             </tbody>
@@ -170,28 +110,29 @@
                 <td class='prod-name'>Kitty Din metal food bowl</td>
                 <td class='prod-price'>$14.95</td>
                 <td class='prod-add'>
-                  <input id="kitty-din-metal-food-bowl" type="submit" value="Add" />
+                  <input  class="order-input" id="kitty-din-metal-food-bowl" type="submit" value="Add" />
                 </td>
               </tr>
               <tr>
                 <td class='prod-name'>Kitty Din metal water bowl</td>
                 <td class='prod-price'>$17.95</td>
                 <td class='prod-add'>
-                  <input id="kitty-din-metal-water-bowl" type="submit" value="Add" />
+                  <input  class="order-input" id="kitty-din-metal-water-bowl" type="submit" value="Add" />
                 </td>
               </tr>
               <tr>
                 <td class='prod-name'>Kitty Climber Cat Tree</td>
                 <td class='prod-price'>$129.95</td>
                 <td class='prod-add'>
-                  <input id="kitty-climber-cat-tree" type="submit" value="Add" />
+                  <input  class="order-input" id="kitty-climber-cat-tree" type="submit" value="Add" />
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
-      <div id="shopping-cart" >My Cart
+      <div id="shopping-cart">
+        <h2>My Cart</h2>
         <ol id="shopping-cart-list"></ol>
       </div>
     </div>

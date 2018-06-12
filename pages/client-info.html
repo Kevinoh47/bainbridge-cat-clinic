@@ -5,27 +5,6 @@
     <meta charset="utf-8"/>
     <meta description="Bainbridge Island Cat Clinic page for gathering new client information.">
     <link href="../css/pages.css" type="text/css" rel="stylesheet"/>
-    <style type="text/css">
-      body {
-        font-family: arial;
-        background-color: rgb(185,179,175);}
-      h1 {
-        color: rgb(255,255,255);}
-      input {
-				padding: 6px 12px 6px 12px;
-				border: 1px solid black; 
-				color: black;}
-			input.text {
-        color: black}
-      #username-feedback {
-        width: 400px;
-        margin-left: 50px;
-        padding-left: 5px;
-        padding-right: 5px;
-        border: 1px black;
-        background-color: lightcoral;
-      }
-    </style>
   </head>
   <body>
     <div id="page">
@@ -33,12 +12,13 @@
       <p>Please provide some information about yourself and your pet or pets.</p>
       <form id="client-info" method="post" action="client-info.html">
         <div>
-            <fieldset>
+            <fieldset id="contact-info-fieldset">
               <legend>Contact information</legend>
               <label for="username">Name: </label>
+
               <input type="text" id="username" required="required" />
               <p id='username-feedback'></p>
-
+              
               <label for="email">Email:</label>
               <input type="email" id="email" required="required" />
 

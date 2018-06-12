@@ -17,7 +17,6 @@ function GetSelectValues(select) {
 function displayHiddenElements(e) {
   const elMultiSelect = document.getElementById('product-types');
   var selected = GetSelectValues(elMultiSelect);
-
   e.preventDefault();
   for (let i = 0; i < selected.length; i++) {
     var currParDiv = document.getElementById(selected[i]).parentElement;

@@ -5,73 +5,42 @@
     <meta charset="utf-8"/>
     <meta description="This page allows members to log in to the Bainbridge Island Cat Clinic's buying club.">
     <link href="../css/pages.css" type="text/css" rel="stylesheet"/>
-    <style type="text/css">
-      input {
-				padding: 6px 12px 6px 12px;
-				border: 1px solid black; 
-        color: black;
-      }
-			input.text {
-        color: black
-      }
-      .one-third, .two-thirds {
-        background-color: #f8584a;
-        border: 12px solid #fff;
-        float: left;
-        padding: 10px;
-        margin: 10px;
-        color: #fff;
-        overflow: hidden;
-      }
-      .one-third {width: 268px;
-      }
-      .two-thirds {width: 530px;
-      }
-      .one-third fieldset {border: none; margin: 0.5em;
-      }
-      .two-thirds fieldset {border: none; margin: 2.5em;
-      }
-      legend {
-        color: black;
-        font-weight: bold;
-      }
-    </style>
   </head>
   <body>
-    <div id="page">
-      <h1>Buying Club Login</h1>
-      <p>Buying Club members receive an automatic 10% discount on regular prescriptions and merchandise.</p>
-      <p>If you are not yet a member, please <a href="buying-club.html">join</a>.</p>
+    <h1>Buying Club Login</h1>
+    <p>Buying Club members receive an automatic 10% discount on regular prescriptions and merchandise.</p>
+    <p>If you are not yet a member, please <a href="buying-club.html">join</a>.</p>
+    <div id="div-content">
       <div class="one-third column">
           <img src="../images/BICC-logo-04.png" alt="logo" id="logo" />
       </div>
-      <form id="login" method="post" action="order.html">
-        <div class="two-thirds column" id="main">
-            <fieldset>
-              <legend>Login</legend>
-              <label for="username">Username:</label>
-              <input type="text" id="username" name="username" />
-              <label for="pwd">Password:</label>
-              <input type="password" id="pwd" name="pwd" />
-              <input id="login-submit" type="submit" value="Come on in!" />
-            </fieldset>
-          </div><!-- .two-thirds -->
+      <form id="login" class="two-thirds column" method="post" action="order.html">
+        <fieldset id="login-fieldset">
+          <legend>Login</legend>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" />
+          <label for="pwd">Password:</label>
+          <input type="password" id="pwd" name="pwd" />
+        </fieldset>
+        <input id="login-submit" type="submit" value="Come on in!" />
       </form>
-    </div><!-- .container -->
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="location.html">Where we are</a></li>
-        <li><a href="our-people.html">Our People</a></li>
-        <li><a href="our-philosophy.html">Our Philosophy</a></li>
-        <li><a href="client-info.html">About You</a></li>
-        <li><a href="contact-us.html">Contact Us</a></li>
-        <li><a href="boarding.html">Cat Hotel</a></li>
-        <li><a href="buying-club.html">Join our Buying Club</a></li>
-        <li><a href="login.html">Buying Club Login</a></li>
-        <li><a href="island-cats.html">Magazine</a></li>
-      </ul>
-    </nav>
+    </div>
+    <div id="div-nav">
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="location.html">Where we are</a></li>
+          <li><a href="our-people.html">Our People</a></li>
+          <li><a href="our-philosophy.html">Our Philosophy</a></li>
+          <li><a href="client-info.html">About You</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="boarding.html">Cat Hotel</a></li>
+          <li><a href="buying-club.html">Join our Buying Club</a></li>
+          <li><a href="login.html">Buying Club Login</a></li>
+          <li><a href="island-cats.html">Magazine</a></li>
+        </ul>
+      </nav>
+    </div>
     <footer>
       <div id='copyright'>&copy; Bainbridge Island Cat Clinic</div>
     </footer>
