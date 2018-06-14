@@ -57,9 +57,11 @@ input.text {
   text-align: right;
   padding-right: 20px;
 }
+p:empty {
+  display: none;
+}
 #username-feedback {
   width: 400px;
-  border: 1px black;
   background-color: lightcoral;
 }
 #contact-info-fieldset, #buying-club-signup {
@@ -83,12 +85,19 @@ input.text {
   left: 40%;
   bottom: 66px;
 }
+#client-submit {
+  width: 55px;
+  margin-top: 10px;
+}
 #logo {
   width: 200px;
   position: relative;
   left: 30px;
 }
-.buying-club-input {
+#pet-info {
+  width: 385px;
+}
+.buying-club-input, .client-info-input {
   width: 200px;
 }
 .contact-us-boxes{
