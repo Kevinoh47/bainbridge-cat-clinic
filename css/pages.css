@@ -186,5 +186,16 @@ tr:hover {
   text-align: right;
   width: 20%;
 }
+figcaption {
+  line-height: 120%
+}
+.current {
+  font-weight: bold;
+  color: brown;
+}
+img.medium {
+  width: 250px;
+}
+
 
 

@@ -4,24 +4,42 @@
     <meta charset="utf-8"/>
     <meta description="Bainbridge Island Cat Clinic employees are people who love cats.">
     <link href="../css/pages.css" type="text/css" rel="stylesheet"/>
-    <!-- <style type="text/css">
-      figcaption {
-        line-height: 120%
-      }
-    </style> -->
   </head>
   <body>
-    <h1>Our People</h1>
-    <p>Our practice is family owned and operated.</p>
-    <h2>Jane O'Halloran, D.V.M.</h2>
-    <p>Dr. Jane graduated <em>summa cum laude</em> from Washington State University's School of Veterinary Medicine.</p>
-    <p>She is married with three children, two dogs, two fish, 7 chickens, and most importantly, <em>two cats</em>.</p> 
-    <p>It may be an understatement to say that Dr. Jane absolutely loves cats.</p>  
-    <p>She has lived on Bainbridge Island since 2014.</p>
-    <figure>
-      <img src="../images/Emmy_in_sunlight_opt.png" alt="Dr. Jane O'Halloran's cat, Emmy" title="Dr. Jane's cat, Emmy" />
-      <figcaption>Dr. Jane's cat, Emmy, loves sunbathing.</figcaption>
-    </figure>
+    <header>
+      <h1>Emmy and Beppo's People</h1>
+      <p>Our practice is family owned and operated.</p>
+      <div id="people-nav">
+        <a id="jane" href="dr-jane.html">Jane</a>
+        <a id="kevin" href="kevin.html">Kevin</a>
+      </div>
+    </header>
+    <div id="people-container">
+      <div id="jane-div" class="hidden">
+        <h2>Jane O'Halloran, D.V.M.</h2>
+        <p>Dr. Jane looks after the cats at B.I.C.C.</p>
+        <p>She graduated <em>summa cum laude</em> from Washington State University's School of Veterinary Medicine.</p>
+        <p>She is married with three children, two dogs, two fish, 7 chickens, and most importantly, <em>two cats</em>.</p>
+        <p>It may be an understatement to say that Dr. Jane absolutely loves cats.</p>
+        <p>She has lived on Bainbridge Island since 2014.</p>
+        <figure>
+          <img class="medium" src="../images/Emmy_in_sunlight_opt.png" alt="Dr. Jane O'Halloran's cat, Emmy" title="Dr. Jane's cat, Emmy" />
+          <figcaption>Dr. Jane's cat, Emmy, loves sunbathing.</figcaption>
+        </figure>
+      </div><!--jane-div-->
+      <div id="kevin-div" class="hidden">
+        <h2>Kevin O'Halloran</h2>
+        <p>Kevin looks after the books at B.I.C.C.</p>
+        <p>In a previous incarnation, Kevin was a software engineer for the likes of NBC News, The Today Show, msnbc.com, and Apex Learning.</p>
+        <p>He is married with three children, two dogs, two fish, 7 chickens, and most importantly, <em>two cats</em>.</p>
+        <p>Kevin is more of a dog person, but loves cats too.</p>
+        <p>He has lived on Bainbridge Island since 2014.</p>
+        <figure>
+          <img class="medium" src="../images/emmy_beppo_porch_edited_v2.png" alt="Cats Emmy and Beppo busy holding down cushions on the front porch" title="Cats Emmy and Beppo" />
+          <figcaption>Emmy and Beppo work hard holding down cushions on the front porch.</figcaption>
+        </figure>
+      </div><!--kevin-div-->
+    </div>
     <nav>
       <ul>
         <li><a href="../index.html">Home</a></li>
@@ -40,5 +58,7 @@
       <div id='copyright'>&copy; Bainbridge Island Cat Clinic</div>
     </footer>
     <script src="../js/utilities.js"></script>
+    <script src="../js/people-load.js"></script>
   </body>
 </html>
+
